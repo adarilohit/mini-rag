@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+data/
+.faiss
+*.bin
+*.pt
+*.onnx
+Dockerfile
+docker_logs.txt
