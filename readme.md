@@ -1,12 +1,18 @@
-# Mini RAG — Ask Your Documents
+# Mini RAG – Ask Your Documents
 
-Upload one `.txt` file → ask questions → answers grounded only in that file.
+A lightweight Retrieval-Augmented Generation (RAG) system built with:
+- FastAPI
+- HuggingFace Transformers
+- FAISS
+- Docker
 
-## Run locally
+## Features
+- Upload `.txt` files
+- Automatic chunking & embeddings
+- Semantic search
+- LLM-powered answers
 
+## Run with Docker
 ```bash
-python -m venv .venv
-source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
-pip install -r requirements.txt
-
-uvicorn app.main:app --reload
+docker build -t mini-rag .
+docker run -p 8000:8000 mini-rag
